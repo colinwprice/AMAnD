@@ -1,0 +1,22 @@
+{
+    "cutoffs": {
+        "def_val_patho"      : true,
+        "def_val_min_len"    : 50,
+        "def_val_min_cov"    : 0.01,
+        "def_val_max_r_raw"  : 100,
+        "def_val_max_r_rsnb" : 10,
+        "def_val_min_score"  : 0.5,
+        "def_val_min_dc"     : 10,
+        "def_val_min_rsdc"   : 1
+    },
+    "displays": {
+        "total_width"        : 1070,
+        "dot_plot_width"     : 800,
+        "dot_plot_height"    : 800,
+        "gcov_plot_width"    : 1060,
+        "gcov_plot_height"   : 190,
+        "read_plot_width"    : 270,
+        "read_plot_height"   : 210,
+        "output_backend"     : "webgl"
+    }
+}

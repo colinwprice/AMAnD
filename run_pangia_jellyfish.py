@@ -10,7 +10,7 @@ if __name__ == '__main__':
     parser.add_argument('-c', '--control_dir', type = str, required=False, default='control_dir', help='Directory of typical, normal, control samples (default=control_dir)')
     parser.add_argument('-t', '--threads', type = int, required=False, default=4, help='Threads to use in processing (default=4)')
     parser.add_argument('-p', '--paired', type = bool, required=False, default=False, help='Are samples paired? Paired samples must have "R1" and "R2" before the .fastq/.fastq/.fa/.fq (default=False)')
-    parser.add_argument('-k', '--kmer_size', type=int, required=False, default=4, help='Specify size of kmers to count (default=4')
+    parser.add_argument('-k', '--kmer_size', type=int, required=False, default=4, help='Specify size of kmers to count (default=4)')
     
     args = parser.parse_args()
     

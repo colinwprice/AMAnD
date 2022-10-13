@@ -171,7 +171,8 @@ if __name__ == '__main__':
             best_truncation_pangia=truncation
             
     pangia_dict_to_dump = {}
-    pangia_dict_to_dump['anomaly_scores'] = best_ascores_pangia.tolist()
+    if has_anomaly:
+        pangia_dict_to_dump['anomaly_scores'] = best_ascores_pangia.tolist()
     pangia_dict_to_dump['control_scores'] = best_cscores_pangia.tolist()
     pangia_dict_to_dump['truncation'] = best_truncation_pangia
     pangia_dict_to_dump['type'] = 'pangia'
@@ -231,7 +232,8 @@ if __name__ == '__main__':
             best_truncation_kmer=truncation
     
     kmer_dict_to_dump = {}
-    kmer_dict_to_dump['anomaly_scores'] = best_ascores_kmer.tolist()
+    if has_anomaly:
+        kmer_dict_to_dump['anomaly_scores'] = best_ascores_kmer.tolist()
     kmer_dict_to_dump['control_scores'] = best_cscores_kmer.tolist()
     kmer_dict_to_dump['truncation'] = best_truncation_kmer
     kmer_dict_to_dump['type'] = 'kmer'

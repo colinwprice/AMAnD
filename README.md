@@ -28,8 +28,14 @@ mkdir test_sample_scores
 ```
 
 To complete set up, install the PanGIA database by running the following command:
+If you don't already have awscli:
 ```
-wget PLACEHOLDER_LINK_TO_PANGIA_DB ./tools/pangia_db/
+sudo apt-get install awscli
+```
+Retrieve and extract the PanGIA database from the s3 bucket
+```
+aws s3 cp s3://pangia1.0/PanGIA_db.tar.gz tools/pangia/pangia_db/PanGIA_db.tar.gz --no-sign-request
+tar -zxvf tools/pangia/pangia_db/PanGIA_db.tar.gz -C tools/pangia/pangia_db/
 ```
 
 # The Workflow Overview

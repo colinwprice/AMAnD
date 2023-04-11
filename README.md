@@ -1,4 +1,5 @@
 # metagenomic_anomaly_detector (AMAnD)
+![](images/AMAnD.svg)
 
 A generalizable framework to create anomaly-detecting DeepSVDD models of metagenomic samples. takes .fasta/.fastq formatted short read inputs and returns a model and/or scores from the model on test samples. GPU acceleration will be automatically employed if available at training time.
 
